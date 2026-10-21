@@ -5,10 +5,9 @@ fn main() {
 
 	// Calculate total amount (A)
 	let a = p * (1.0 + (r / 100.0)).powf(n);
+	println!("Total Amount after {} years is: N{}", n,a);
 
 	// Calculate compound interest (CI)
 	let ci = a - p;
-
-	println!("Total Amount after {} years is: N{}", n,a);
 	println!("Compound Interest is: N{}", ci);
 }
